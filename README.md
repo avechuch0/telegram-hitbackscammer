@@ -100,7 +100,7 @@ Take into account you need your mobile phone also to get an API key from Telegra
 
 ### 2. Ok but, is my identity would be pwned, or found by the scammer/phisher?
 
-Nope, the attackers won't have any information about it, despite we are doing something to the attacker's chat/channel, remember we are using their own bot and on the other hand, the communication takes places against Telegram using the API.
+Nope, the attackers won't have any information about you, despite we are doing something to the attacker's chat/channel, remember we are using their own bot and on the other hand, the communication takes places against Telegram using the API.
 
 ### 3. Can I use each script separately?
 
