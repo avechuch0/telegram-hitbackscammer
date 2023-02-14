@@ -53,6 +53,7 @@ This simply unattach/leave the scammer channel where the bot is linked. This is 
 3. Get the Telegram API keys (api_id and api_hash) following the instructions here https://core.telegram.org/api/obtaining_api_id
 4. Set the API keys in your config.ini file
 5. You're ready to go :) simply run the main script *python .\telegram-hitbackscammer.py* or *python3 .\telegram-hitbackscammer.py* depending how you are calling your python instance.
+6. The first time, you would be asked for a kind of login, **input first your mobile number** including the + then you would be asked for the bot-token, which would be the one part of the phishing kit found. This is to create a .session files of user and bot to interact with the Telegram API.
 
 # Requirements
 * Python 3.7 or higher
