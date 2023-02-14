@@ -72,7 +72,7 @@ All the scripts are using the bot-token of the scammer you found mainly to condu
 
 Take into account you need your mobile phone also to get an API key from Telegram, otherwise you won't be able to do anything with the API and these scripts.
 
-2. Ok, but my identity would be pwned, or found by the scammer/phisher?
+2. Ok but, is my identity would be pwned, or found by the scammer/phisher?
 
 Nope, the attackers won't have any information about it, despite we are doing something to the attacker's chat/channel, remember we are using their own bot and on the other hand, the communication takes places against Telegram using the API.
 
