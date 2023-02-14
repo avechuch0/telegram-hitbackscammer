@@ -64,3 +64,19 @@ This simply unattach/leave the scammer channel where the bot is linked. This is 
 * Python 3.7 or higher
 * Internet Connection (You are going to be communicating with Telegram's servers)
 
+#FAQ
+1. Why I have to login with my phone?
+
+To interact with Telegram, you can do it as yourself (own entity) and with a bot.
+All the scripts are using the bot-token of the scammer you found mainly to conduct the activities, the only script which uses your phone login is to read (not delete) the messages of public channels.
+
+Take into account you need your mobile phone also to get an API key from Telegram, otherwise you won't be able to do anything with the API and these scripts.
+
+2. Ok, but my identity would be pwned, or found by the scammer/phisher?
+
+Nope, the attackers won't have any information about it, despite we are doing something to the attacker's chat/channel, remember we are using their own bot and on the other hand, the communication takes places against Telegram using the API.
+
+3. Can I use each script separately?
+
+Yes you can, but I kindly suggest you to use the main one with the menu as a help for you, it's up to you.
+
