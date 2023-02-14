@@ -3,7 +3,7 @@ This is a set of scripts and protocols to do some active defense and offensive c
 
 telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help on combating data theft, financial fraud prevention, impersonation, save people's data, and contributing for a world wiped of phishing :)
 
-Want more information around this concepts:
+Want more information around these concepts:
 
 https://icdt.osu.edu/offensive-countermeasures-art-active-defense
 
@@ -13,14 +13,19 @@ https://www.sans.org/white-papers/36240/
 
 https://www.slideshare.net/JaimeAndrsBelloVieda/una-mirada-a-la-active-defense-harbinger-distribution-como-herramienta-de-monitoreo-y-defensa-activa-ante-ataques
 
+# Why this development?
+The goal and bussiness case around this development relies on helping security researchers, threat hunters, incident responders, individuals and even the affected companies itself with the provision of a protocol to do something more proactive regarding a phishing environment where Telegram is being used part of the malicious kit to store the stolen data. 
+
+Attackers on the wild are using Telegram as infrastructure to store the data once a victim trips up on the trap. The options vary between public/private channels and private chats.
+
 # Quick Overview
 Default mode - Running *telegram-hitbackscamer.py*
 
-![alt text](https://github.com/avechuch0/telegram-hitbackscammer/blob/main/images/main.png)
+![pic](https://github.com/avechuch0/telegram-hitbackscammer/blob/main/images/main.png)
 
 # Options Description
 ## 1. Doubts? - Check if the channel is public or private
-Scammers/phishers use multiple options to store the data on Telegram once a victim trips up on tramp. The options vary between public/private channels and private chats. It is easy to find a Telegram public channel on a phishing kit, you will see an @ at the begging or simply you can search through your Telegram App for the channel. Private chats/channels identifiers are composing by numbers ALWAYS.
+It is easy to know if a Telegram public channel is part of a phishing kit, you will see an @ at the begging or simply you can search through your Telegram App for the channel found. Private chats/channels identifiers are composed by numbers ALWAYS.
 
 But anyway, this option is precisely to check it, so let telegram-hitbackscammer do it for you.
 
