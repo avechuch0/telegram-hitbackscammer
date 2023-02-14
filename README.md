@@ -14,4 +14,13 @@ https://www.sans.org/white-papers/36240/
 https://www.slideshare.net/JaimeAndrsBelloVieda/una-mirada-a-la-active-defense-harbinger-distribution-como-herramienta-de-monitoreo-y-defensa-activa-ante-ataques
 
 # Quick Overview
+Default mode - Running telegram-hitbackscamer.py
 ![alt text](https://github.com/avechuch0/telegram-hitbackscammer/blob/main/images/main.png)
+
+# Getting started
+1. Download / clone the repo
+2. Install required packages: pip3 install -r requirements.txt
+3. Get the Telegram API keys (api_id and api_hash) following the instructions here https://core.telegram.org/api/obtaining_api_id
+4. Set the API keys in config.ini file
+5. You're ready to go :) simply run the main script python .\telegram-hitbackscammer.py or python3 .\telegram-hitbackscammer.py depending how you are calling your python instance.
+
