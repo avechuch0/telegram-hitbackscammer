@@ -1,7 +1,7 @@
 # Telegram-hitbackscammer 
-This is a set of scripts and protocols to do some offensive countermeausures and active defense against phishers/scammers who use Telegram chats/channels as part of phishing kits.
+This is a set of scripts and protocols to do some active defense and offensive countermeausures against phishers/scammers who use Telegram chats/channels as part of phishing kits.
 
-telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts to screw up threat actor activities, which can help on combating data theft, financial fraud prevention, impersonation, save people data, and contributing for a world wiping of phishing :)
+telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help on combating data theft, financial fraud prevention, impersonation, save people's data, and contributing for a world wiped of phishing :)
 
 Want more information around this concepts:
 
