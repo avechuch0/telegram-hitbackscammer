@@ -65,6 +65,10 @@ Just to finish the program.
 5. You're ready to go :) simply run the main script *python .\telegram-hitbackscammer.py* or *python3 .\telegram-hitbackscammer.py* depending how you are calling your python instance
 6. The first time, you would be asked for a kind of login, **input first your mobile number** including the +, then you would be asked for the bot-token, which would be the one part of the phishing kit found. This is to create a .session files of user and bot to interact with the Telegram API
 
+# Main feeds of this program
+In general terms, the core of telegram-hitbackscammer are the chat/channels and Telegram bot tokens. Below you can see some examples taken from real cases:
+
+
 # Requirements
 * Python 3.7 or higher
 * Internet Connection (You are going to be communicating with Telegram's servers)
