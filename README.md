@@ -52,6 +52,9 @@ This simply unattach/leave the scammer channel where the bot is linked. This is 
 1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, they would realize what happened, it's up to them include again the bot or not.
 2. **And the most important disadvantage** Once you leave a channel, you won't be able to do anything else on the channel. **This should be your last option/decision due the lack of control once you leave.**
 
+### 7. Exit
+Just to finish the program.
+
 # Getting started
 1. Download / clone the repo
 2. Install required packages: pip3 install -r requirements.txt
