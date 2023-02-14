@@ -78,5 +78,5 @@ Nope, the attackers won't have any information about it, despite we are doing so
 
 3. Can I use each script separately?
 
-Yes you can, but I kindly suggest you to use the main one with the menu as a help for you, it's up to you.
+Yes you can, but I kindly suggest you to use the main one with the menu as a help for you, it's up to you :)
 
