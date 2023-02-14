@@ -68,7 +68,7 @@ Just to finish the program.
 # Main feeds of this program
 In general terms, the core of telegram-hitbackscammer are the chat/channels and Telegram bot tokens. Below you can see some examples taken from real cases:
 
-Public chat/channel:
+Public channel:
 ```diff
 //bot token
 var telegram_bot_id =  "4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi";
