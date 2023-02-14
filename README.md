@@ -12,3 +12,5 @@ https://en.wikipedia.org/wiki/Active_defense
 https://www.sans.org/white-papers/36240/
 
 https://www.slideshare.net/JaimeAndrsBelloVieda/una-mirada-a-la-active-defense-harbinger-distribution-como-herramienta-de-monitoreo-y-defensa-activa-ante-ataques
+
+# Quick Overview
