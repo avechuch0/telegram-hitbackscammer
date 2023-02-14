@@ -64,7 +64,7 @@ This simply unattach/leave the scammer channel where the bot is linked. This is 
 * Python 3.7 or higher
 * Internet Connection (You are going to be communicating with Telegram's servers)
 
-#FAQ
+# FAQ
 1. Why I have to login with my phone?
 
 To interact with Telegram, you can do it as yourself (own entity) and with a bot.
