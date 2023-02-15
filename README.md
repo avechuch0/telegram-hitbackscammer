@@ -33,15 +33,15 @@ More info about the Telegram chats/channels: https://telegram.org/faq_channels
 Get a list of scammer channel`s administrators, then you may see who is the owner of the channel and make a threat attribution, i.e. identify the responsible scammer/phisher.
 
 ### 3. Delete the last 48 hours messages of public channel  - (Only for public channels)
-Selecting this option, you can read and delete the messages received for the last 48 hours on *public* scammer channel. *Be sure to input a public channel name once the program asks to avoid errors.*
+Selecting this option, you can read and delete the messages received during the last 48 hours on **public** scammer channel. Be sure to **input a public channel name** once the program asks to avoid errors.
 
 ### 4. Delete the last 48 hours messages of private channel - (Only for private channels)
-Selecting this option, you can read and delete the messages received for the last 48 hours on *private* scammer channel. *Be sure to input a private channel name once the program asks to avoid errors.*
+Selecting this option, you can read and delete the messages received during the last 48 hours on **private** scammer channel. Be sure to **input a private channel name** once the program asks to avoid errors.
 
 ### 5. Listening mode for bot to delete any incoming messages
 This is an interesting option if you want to annoy the scammer a lot!
 
-This option has the power to inmediately delete any try posting message the scammer bot would like to store on channel/chat. No matter what channel/chat id you already found on the phishing, this has the plus of **deleting inmediately the messages for any post in any channel/chat the scammer has set up.**
+This option has the power to delete immediately any try posting message the scammer bot would like to store on channel/chat. No matter what channel/chat id you already found on the phishing, this has the plus of **deleting inmediately the messages for any post in any channel/chat the scammer has set up.**
 
 Once you select this option you will see the message "Listening mode for bot", and any time a victim inputs data on a phishing associated with the bot-token value, you would be notified on the shell with a successfully message deletion, while the scammer would be fucked up and unable to see what the bot tried to post.
 
