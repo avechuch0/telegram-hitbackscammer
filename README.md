@@ -5,7 +5,7 @@
 # Telegram-hitbackscammer 
 This is a set of scripts and protocols to do some active defense and offensive countermeausures against scammers/phishers who use Telegram chats/channels as part of phishing kits.
 
-telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help with combating data theft, financial fraud prevention, impersonation, save people's data, and contributing for a world free of phishing :)
+telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help with combating data theft, financial fraud prevention, impersonation, saving people's data, and contributing to a world free of phishing :)
 
 Want more information around these concepts? Take a look of this:
 
@@ -47,7 +47,7 @@ This option has **the power to delete immediately any message the scammer bot wr
 Once you select this option, you will see the message **Listening mode for bot**, and every time a victim processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer will be fucked up and unable to see what the bot tried to post in the chat/channel.
 
 ### 6. Leave the channel - (Available for both Public/Private channels)
-This simply makes a bot leave the channel used by the scammer/phisher. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option **has 2 disadvantages** though:
+This will disconnect/make a bot used by a scammer/phisher leave the channel. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option **has 2 disadvantages** though:
 
 1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, he/she would realize what happened. It's up to them to add again the bot or not to the channel.
 
@@ -66,7 +66,7 @@ Just to finish the program.
 6. The first time, you would be asked for a kind of login, **input your mobile number** including the + (i.e. +57300...), then you would be asked for the bot-token (i.e. 4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi), found on the phishing kit. This is to create a .session files to interact with the Telegram API.
 
 # Main feeds of this program
-In general terms, the core of telegram-hitbackscammer are the chat/channels and Telegram bot tokens. Below you can see some examples taken from real phishing cases:
+The core of telegram-hitbackscammer are the chats/channels and Telegram bot-tokens. Below you can see some examples taken from real phishing cases:
 
 Public channel:
 ```diff
