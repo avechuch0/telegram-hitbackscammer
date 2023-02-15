@@ -47,7 +47,7 @@ This option has **the power to delete immediately any message the scammer bot wr
 Once you select this option, you will see the message **Listening mode for bot**, and every time a victim processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer will be fucked up and unable to see what the bot tried to post in the chat/channel.
 
 ### 6. Leave the channel - (Available for both Public/Private channels)
-This simply makes a bot leave the channel used by the scammer/phisher. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option has 2 disadvantages though:
+This simply makes a bot leave the channel used by the scammer/phisher. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option **has 2 disadvantages** though:
 
 1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, he/she would realize what happened. It's up to them to add again the bot or not to the channel.
 
