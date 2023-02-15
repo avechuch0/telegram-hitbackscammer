@@ -30,7 +30,7 @@ If you don't know whether the channel found on the phishing kit is public or pri
 More info about the Telegram chats/channels: https://telegram.org/faq_channels
 
 ### 2. Get the list of administrators for channel
-Get a list of scammer channel`s administrators, it may you can see who is the owner of the channel and conclude some attribution to a threat actor.
+Get a list of scammer channel`s administrators, then you may see who is the owner of the channel and make a threat attribution, i.e. identify the responsible scammer/phisher.
 
 ### 3. Delete the last 48 hours messages of public channel  - (Only for public channels)
 Selecting this option, you can read and delete up to the last 48 hours of messages of **public** scammer channel. **Be sure to input a public channel once you are asked if you want to avoid errors.**
