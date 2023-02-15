@@ -91,7 +91,7 @@ So the values of bot and chat values without the quotes "" are the ones you need
 * Internet Connection (You are going to be communicating with Telegram's servers)
 
 # FAQ
-### 1. Why I have to login with my phone?
+### 1. Why do I have to login with my phone?
 
 To interact with Telegram, you can do it as yourself (own entity) and with a bot.
 All the scripts are using the bot-token of the scammer you found mainly to conduct the activities, the only script which uses your phone login is to read (not delete) the messages of public channels.
