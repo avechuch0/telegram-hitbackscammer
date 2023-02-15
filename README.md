@@ -59,10 +59,10 @@ Just to finish the program.
 
 # Getting started
 1. Download / clone the repo
-2. Install required packages: pip3 install -r requirements.txt
+2. Install required packages: ```pip3 install -r requirements.txt```
 3. Get the Telegram API keys (api_id and api_hash) following the instructions here https://core.telegram.org/api/obtaining_api_id
 4. Set the API keys in your config.ini file
-5. You're ready to go :) simply run the main script *python .\telegram-hitbackscammer.py* or *python3 .\telegram-hitbackscammer.py* depending how you are calling your python instance
+5. You're ready to go :) simply run the main script ```python .\telegram-hitbackscammer.py``` or ```python3 .\telegram-hitbackscammer.py``` depending how you are calling your python instance
 6. The first time, you would be asked for a kind of login, **input your mobile number** including the + (i.e. +57300...), then you would be asked for the bot-token (i.e. 4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi), found on the phishing kit. This is to create a .session files to interact with the Telegram API.
 
 # Main feeds of this program
