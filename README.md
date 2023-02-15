@@ -26,7 +26,8 @@ Default mode - Running *telegram-hitbackscamer.py*
 
 # Options Description
 ### 1. Doubts? - Check if the channel is public or private
-If you don't know whether the channel found on the phishing kit is public or private, use this option to check it. </br>
+If you don't know whether the channel found on the phishing kit is public or private, use this option to check it.
+
 More info about the Telegram chats/channels: https://telegram.org/faq_channels
 
 ### 2. Get the list of administrators for channel
