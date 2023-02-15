@@ -40,11 +40,11 @@ Selecting this option, you can read and delete the messages received during the 
 Selecting this option, you can read and delete the messages received during the last 48 hours on **private** scammer channel. Be sure to **input a private channel name** once the program asks to avoid errors.
 
 ### 5. Listening mode for bot to delete any incoming messages
-This is an interesting option if you want to annoy the scammer a lot!
+This is an interesting option if you want to annoy the scammer!
 
-This option has the power to delete immediately any try posting message the scammer bot would like to store on channel/chat. No matter what channel/chat id you already found on the phishing, this has the plus of **deleting inmediately the messages for any post in any channel/chat the scammer has set up.**
+This option has **the power to delete immediately any message the scammer bot writes in any chat/channel** associated with the malicious bot-token found on the phishing kit, if the attacker has more phishing campaings with other chats/channels created.
 
-Once you select this option you will see the message "Listening mode for bot", and any time a victim inputs data on a phishing associated with the bot-token value, you would be notified on the shell with a successfully message deletion, while the scammer would be fucked up and unable to see what the bot tried to post.
+Once you select this option, you will see the message **Listening mode for bot**, and every time a victim types and processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer would be fucked up and unable to see what the bot tried to post in the chat/channel.
 
 ### 6. Leave the channel - (Available for both Public/Private channels)
 This simply unattach/leave the scammer channel where the bot is linked. This is a silent annoying way to avoid further posting for bot on the channel, but has 2 disadvantages.
