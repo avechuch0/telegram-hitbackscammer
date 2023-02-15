@@ -51,7 +51,7 @@ Once you select this option you will see the message "Listening mode for bot", a
 ### 6. Leave the channel - (Available for both Public/Private channels)
 This simply unattach/leave the scammer channel where the bot is linked. This is a silent annoying way to avoid further posting for bot on the channel, but has 2 disadvantages.
 1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, they would realize what happened, it's up to them include again the bot or not.
-2. **And the most important disadvantage** </br> 
+2. **And the most important disadvantage:** </br> 
 Once you leave a channel, you won't be able to do anything else on the channel. **This should be your last option/decision due the lack of control once you leave.**
 
 ### 7. Exit
