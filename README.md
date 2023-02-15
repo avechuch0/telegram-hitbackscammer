@@ -109,5 +109,4 @@ Nope, the attackers won't have any information about you, despite we are doing s
 Yes you can, but I kindly suggest you to use the main one with the menu as a help for you, it's up to you :)
 
 # Contact
-Twitter: https://twitter.com/avechuch0
-
+Twitter: [@avechuch0](https://twitter.com/avechuch0)
