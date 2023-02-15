@@ -33,10 +33,10 @@ More info about the Telegram chats/channels: https://telegram.org/faq_channels
 Get a list of scammer channel`s administrators, then you may see who is the owner of the channel and make a threat attribution, i.e. identify the responsible scammer/phisher.
 
 ### 3. Delete the last 48 hours messages of public channel  - (Only for public channels)
-Selecting this option, you can read and delete up to the last 48 hours of messages of **public** scammer channel. **Be sure to input a public channel once you are asked if you want to avoid errors.**
+Selecting this option, you can read and delete the messages received for the last 48 hours on *public* scammer channel. *Be sure to input a public channel name once the program asks to avoid errors.*
 
 ### 4. Delete the last 48 hours messages of private channel - (Only for private channels)
-Selecting this option, you can read and delete up to the last 48 hours of messages of **private** scammer channel. **Be sure to input a private channel once you are asked if you want to avoid errors.**
+Selecting this option, you can read and delete the messages received for the last 48 hours on *private* scammer channel. *Be sure to input a private channel name once the program asks to avoid errors.*
 
 ### 5. Listening mode for bot to delete any incoming messages
 This is an interesting option if you want to annoy the scammer a lot!
