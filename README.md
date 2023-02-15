@@ -9,13 +9,10 @@ telegram-hitbackscammer.py is a practical application of Annoyance, Attribution 
 
 Want more information around these concepts:
 
-* https://icdt.osu.edu/offensive-countermeasures-art-active-defense
-
-* https://en.wikipedia.org/wiki/Active_defense
-
-* https://www.sans.org/white-papers/36240/
-
-* https://www.slideshare.net/JaimeAndrsBelloVieda/una-mirada-a-la-active-defense-harbinger-distribution-como-herramienta-de-monitoreo-y-defensa-activa-ante-ataques
+* https://icdt.osu.edu/offensive-countermeasures-art-active-defense </br>
+* https://en.wikipedia.org/wiki/Active_defense </br>
+* https://www.sans.org/white-papers/36240/ </br>
+* https://www.slideshare.net/JaimeAndrsBelloVieda/una-mirada-a-la-active-defense-harbinger-distribution-como-herramienta-de-monitoreo-y-defensa-activa-ante-ataques </br>
 
 # Why this development?
 The goal and bussiness case around this development relies on helping security researchers, threat hunters, incident responders, individuals and even the affected companies itself with the provision of a protocol to do something more proactive regarding a phishing environment where Telegram is being used part of the malicious kit to store the stolen data. 
