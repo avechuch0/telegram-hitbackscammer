@@ -44,13 +44,15 @@ This is an interesting option if you want to annoy the scammer!
 
 This option has **the power to delete immediately any message the scammer bot writes in any chat/channel** associated with the malicious bot-token found on the phishing kit, if the attacker has more phishing campaings with other chats/channels created.
 
-Once you select this option, you will see the message **Listening mode for bot**, and every time a victim types and processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer would be fucked up and unable to see what the bot tried to post in the chat/channel.
+Once you select this option, you will see the message **Listening mode for bot**, and every time a victim processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer will be fucked up and unable to see what the bot tried to post in the chat/channel.
 
 ### 6. Leave the channel - (Available for both Public/Private channels)
-This simply unattach/leave the scammer channel where the bot is linked. This is a silent annoying way to avoid further posting for bot on the channel, but has 2 disadvantages.
-1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, they would realize what happened, it's up to them include again the bot or not.
+This simply makes a bot leave the channel used by the scammer/phisher. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option has 2 disadvantages though:
+
+1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, he/she would realize what happened. It's up to them to add again the bot or not to the channel.
+
 2. **And the most important disadvantage:** </br> 
-Once you leave a channel, you won't be able to do anything else on the channel. **This should be your last option/decision due the lack of control once you leave.**
+**Once you leave a channel, you won't be able to do anything else there.** So this should be your last option.
 
 ### 7. Exit
 Just to finish the program.
@@ -61,10 +63,10 @@ Just to finish the program.
 3. Get the Telegram API keys (api_id and api_hash) following the instructions here https://core.telegram.org/api/obtaining_api_id
 4. Set the API keys in your config.ini file
 5. You're ready to go :) simply run the main script *python .\telegram-hitbackscammer.py* or *python3 .\telegram-hitbackscammer.py* depending how you are calling your python instance
-6. The first time, you would be asked for a kind of login, **input first your mobile number** including the +, then you would be asked for the bot-token, which would be the one part of the phishing kit found. This is to create a .session files of user and bot to interact with the Telegram API
+6. The first time, you would be asked for a kind of login, **input your mobile number** including the + (i.e. +57300...), then you would be asked for the bot-token (i.e. 4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi), found on the phishing kit. This is to create a .session files to interact with the Telegram API.
 
 # Main feeds of this program
-In general terms, the core of telegram-hitbackscammer are the chat/channels and Telegram bot tokens. Below you can see some examples taken from real cases:
+In general terms, the core of telegram-hitbackscammer are the chat/channels and Telegram bot tokens. Below you can see some examples taken from real phishing cases:
 
 Public channel:
 ```diff
@@ -82,27 +84,30 @@ var telegram_bot_id =  "5919290478:AAKiogpUidLGIMdImjI3V38roCOldLjsiOP";
 var chat_id ="5616310229";
 ```
 
-So the values of bot and chat values without the quotes "" are the ones you need to get fun }:-)
+So the values of bot and chat values without the quotes "" are the ones you need to have fun }:-)
 
 # Requirements
 * Python 3.7 or higher
-* Internet Connection (You are going to be communicating with Telegram's servers)
+* Internet Connection (You are going to be interacting with Telegram's servers)
 
 # FAQ
+<!---
 ### 1. Why do I have to login with my phone?
 
-To interact with Telegram, you can do it as yourself (own entity) and with a bot.
-All the scripts are using the bot-token of the scammer you found mainly to conduct the activities, the only script which uses your phone login is to read (not delete) the messages of public channels.
+To interact with Telegram, you can do it using your own account  or with a bot.
+
+All these scripts use the bot-token of the scammer you found to conduct the activities, the only script which uses your phone login is to read (not delete) the messages of public channels.
 
 Take into account you need your mobile phone also to get an API key from Telegram, otherwise you won't be able to do anything with the API and these scripts.
+--->
 
-### 2. Ok but, is my identity would be pwned, or found by the scammer/phisher?
+### 1. Is my identity would be pwned, or found by the scammer/phisher?
 
-Nope, the attackers won't have any information about you, despite we are doing something to the attacker's chat/channel, remember we are using their own bot and on the other hand, the communication takes places against Telegram using the API.
+Nope, the attackers won't have any information about you. Despite your possible actions on the attacker's chat/channel, remember we are using their own bot and, on the other hand, the communication takes place between the bot and Telegram through the API.
 
-### 3. Can I use each script separately?
+### 2. Can I use each script separately?
 
-Yes you can, but I kindly suggest you to use the main one with the menu as a help for you, it's up to you :)
+Yes you can, but I kindly recommend you to use the main one with the menu, though it's up to you :)
 
 # Contact
 Twitter: [@avechuch0](https://twitter.com/avechuch0)
