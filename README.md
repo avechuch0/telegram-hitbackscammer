@@ -51,7 +51,7 @@ This simply makes a bot leave the channel used by the scammer/phisher. This is a
 
 1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, he/she would realize what happened. It's up to them to add again the bot or not to the channel.
 
-2. **And the most important disadvantage:** </br> 
+**2. And the most important disadvantage:** </br> 
 Once you leave a channel, you won't be able to do anything else there. So this should be your last option.
 
 ### 7. Exit
