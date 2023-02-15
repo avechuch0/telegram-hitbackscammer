@@ -5,19 +5,19 @@
 # Telegram-hitbackscammer 
 This is a set of scripts and protocols to do some active defense and offensive countermeausures against scammers/phishers who use Telegram chats/channels as part of phishing kits.
 
-telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help on combating data theft, financial fraud prevention, impersonation, save people's data, and contributing for a world wiped of phishing :)
+telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help with combating data theft, financial fraud prevention, impersonation, save people's data, and contributing for a world free of phishing :)
 
-Want more information around these concepts:
+Want more information around these concepts? Take a look of this:
 
 * https://icdt.osu.edu/offensive-countermeasures-art-active-defense </br>
 * https://en.wikipedia.org/wiki/Active_defense </br>
 * https://www.sans.org/white-papers/36240/ </br>
 * https://www.slideshare.net/JaimeAndrsBelloVieda/una-mirada-a-la-active-defense-harbinger-distribution-como-herramienta-de-monitoreo-y-defensa-activa-ante-ataques </br>
 
-# Why this development?
-The goal and bussiness case around this development relies on helping security researchers, threat hunters, incident responders, individuals and even the affected companies itself with the provision of a protocol to do something more proactive regarding a phishing environment where Telegram is being used part of the malicious kit to store the stolen data. 
+# Why it has been developed?
+The goal of this development is to help security researchers, threat hunters, incident responders, individuals and even the affected companies with the provision of a protocol to be more proactive in terms of defending against phishing attacks where Telegram is used to store the stolen data.
 
-Attackers on the wild are using Telegram as infrastructure to store the data once a victim trips up on the trap. The options vary between public/private channels and private chats.
+Attackers on the wild are using Telegram as infrastructure to store the data once a victim fall into the trap. The options vary between public/private channels and private chats.
 
 # Quick Overview
 Default mode - Running *telegram-hitbackscamer.py*
@@ -26,14 +26,11 @@ Default mode - Running *telegram-hitbackscamer.py*
 
 # Options Description
 ### 1. Doubts? - Check if the channel is public or private
-It is easy to know if a Telegram public channel is part of a phishing kit, you will see an @ at the begging or simply you can search through your Telegram App for the channel found. Private chats/channels identifiers are composed by numbers ALWAYS.
-
-But anyway, this option is precisely to check it, so let telegram-hitbackscammer do it for you.
-
-More info around about the Telegram chats/channels https://telegram.org/faq_channels
+If you don't know whether the channel found on the phishing kit is public or private, use this option to check it. </br>
+More info about the Telegram chats/channels: https://telegram.org/faq_channels
 
 ### 2. Get the list of administrators for channel
-Get a table of administrators of scammer channel, depending of the case and the permissions of the bot, may you can see who is the owner of the channel and conclude some attribution to a threat actor.
+Get a list of scammer channel`s administrators, it may you can see who is the owner of the channel and conclude some attribution to a threat actor.
 
 ### 3. Delete the last 48 hours messages of public channel  - (Only for public channels)
 Selecting this option, you can read and delete up to the last 48 hours of messages of **public** scammer channel. **Be sure to input a public channel once you are asked if you want to avoid errors.**
