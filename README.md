@@ -91,16 +91,6 @@ So the values of bot and chat values without the quotes "" are the ones you need
 * Internet Connection (You are going to be interacting with Telegram's servers)
 
 # FAQ
-<!---
-### 1. Why do I have to login with my phone?
-
-To interact with Telegram, you can do it using your own account  or with a bot.
-
-All these scripts use the bot-token of the scammer you found to conduct the activities, the only script which uses your phone login is to read (not delete) the messages of public channels.
-
-Take into account you need your mobile phone also to get an API key from Telegram, otherwise you won't be able to do anything with the API and these scripts.
---->
-
 ### 1. Is my identity would be pwned, or found by the scammer/phisher?
 
 Nope, the attackers won't have any information about you. Despite your possible actions on the attacker's chat/channel, remember we are using their own bot and, on the other hand, the communication takes place between the bot and Telegram through the API.
