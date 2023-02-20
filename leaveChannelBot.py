@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import configparser
 from telethon import TelegramClient, types
-from colorama import Fore
+from colorama import Fore, Style
+import sys
 
 # Reading Configs
 config = configparser.ConfigParser()
@@ -41,7 +42,7 @@ async def main():
     if answer == 'Yes':
         try:
             await bot.delete_dialog(channel, revoke = True)
-            print("Succesfully leaving the channel " + str(entity))
+            print(Fore.GREEN + "Succesfully leaving the channel " + str(entity) + Style.RESET_ALL)
         except Exception as err:
             print(Exception, err)
             print("It might possible you see you're not a member of channel because you already previously left it")
