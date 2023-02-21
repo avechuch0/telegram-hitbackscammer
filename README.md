@@ -84,7 +84,7 @@ var telegram_bot_id =  "5919290478:AAKiogpUidLGIMdImjI3V38roCOldLjsiOP";
 var chat_id ="5616310229";
 ```
 
-So the values of bot and chat values without the quotes "" are the ones you need to have fun }:-)
+So the bot token and chat id values without the quotes "" are the ones you need to have fun }:-)
 
 # Requirements
 * Python 3.7 or higher
