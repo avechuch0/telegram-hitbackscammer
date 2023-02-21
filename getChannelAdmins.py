@@ -18,6 +18,7 @@ bot_username = config['Telegram']['bot_username']
 init(autoreset=False)
 
 # Creating the 'bot' session
+print(Fore.GREEN + "[+] We are creating the session file for bot, input the bot token (i.e. 4509046619:LMnjdork...)" + Style.RESET_ALL)
 bot = TelegramClient(bot_username, api_id, api_hash)
 
 async def main():
