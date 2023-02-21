@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import configparser
 import subprocess
+from telethon import TelegramClient
 from colorama import Fore, Back, Style
 from colorama import init
 
@@ -100,32 +101,46 @@ def menu():
     
     return choice
 
+login = True
 def check_config():
     if not api_id or not api_hash or not user_username or not bot_username:
         print("".ljust(2) + ":( \n  Please check the config.ini file and fill the variables to use this program, any there can be empty")        
-        return False
+        return False    
     else:
+        global login
+        if login is True:
+            # Creating the 'user' session
+            print(Fore.GREEN + "[+] We are creating the session file for user, input your mobile phone number to login (i.e. +57300...)" + Style.RESET_ALL)
+            client = TelegramClient(user_username, api_id, api_hash)
+            client.start()
+            client.disconnect()
+            # Creating the 'bot' session
+            print(Fore.GREEN + "[+] We are creating the session file for bot, input the bot token (i.e. 4509046619:LMnjdork...)" + Style.RESET_ALL)
+            bot = TelegramClient(bot_username, api_id, api_hash)
+            bot.start()
+            bot.disconnect()            
+            login = False
         return True
 
 while check_config():    
     choice = menu()
     if choice == "1":        
-        subprocess.run(["python", "checkChannel.py"], check=True)        
+        subprocess.run(["python3", "checkChannel.py"], check=True)        
         foreground = False
     elif choice == "2":        
-        subprocess.run(["python", "getChannelAdmins.py"], check=True)        
+        subprocess.run(["python3", "getChannelAdmins.py"], check=True)        
         foreground = False
     elif choice == "3":
-        subprocess.run(["python", "deleteChannelMsgs.py"], check=True)
+        subprocess.run(["python3", "deleteChannelMsgs.py"], check=True)
         foreground = False
     elif choice == "4":
-        subprocess.run(["python", "deletePrivateChannelMsgs.py"], check=True)
+        subprocess.run(["python3", "deletePrivateChannelMsgs.py"], check=True)
         foreground = False
     elif choice == "5":
-        subprocess.run(["python", "deleteMsgsOnceBotPosted.py"], check=True)
+        subprocess.run(["python3", "deleteMsgsOnceBotPosted.py"], check=True)
         foreground = False
     elif choice == "6":
-        subprocess.run(["python", "leaveChannelBot.py"], check=True)
+        subprocess.run(["python3", "leaveChannelBot.py"], check=True)
         foreground = False
     elif choice == "7":
         break
