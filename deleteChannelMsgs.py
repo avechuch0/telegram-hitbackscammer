@@ -29,6 +29,8 @@ if not os.path.isfile(str(bot_username) + ".session"):
 bot = TelegramClient(bot_username, api_id, api_hash)
 bot.start()
 
+channel = input("Type the scammer channel username (Starts with @ or Telegram URL): ")
+
 async def get_channel_msgs():     
     all_messages = []  
     # Getting the date from last message and deduct 48 hours 
