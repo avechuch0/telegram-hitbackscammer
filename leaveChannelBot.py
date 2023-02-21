@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import configparser
+import os
 from telethon import TelegramClient, types
 from colorama import Fore, Style
 import sys
