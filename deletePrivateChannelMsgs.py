@@ -58,7 +58,6 @@ async def get_channel_msgs(channel):
                 break          
         #Handling NoneType data
         except Exception as err: 
-            print(err)             
             none_count += 1
             msg_id -= 1
             if none_count >= 30:
