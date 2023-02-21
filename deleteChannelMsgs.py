@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import configparser
+import os
 from telethon import TelegramClient
 from colorama import Fore, Back, Style, init
 import time
@@ -18,16 +19,14 @@ bot_username = config['Telegram']['bot_username']
 init(autoreset=False)
 
 # Creating the user session
-print(Fore.GREEN + "[+] We are creating the session file for user, input your mobile phone number to login (i.e. +57300...)" + Style.RESET_ALL)
+if not os.path.isfile(str(user_username) + ".session"):
+    print(Fore.GREEN + "[+] We are creating the session file for user, input your mobile phone number to login (i.e. +57300...)" + Style.RESET_ALL)
 client = TelegramClient(user_username, api_id, api_hash)
-# Creating the bot session
-print(Fore.GREEN + "[+] We are creating the session file for bot, input the bot token (i.e. 4509046619:LMnjdork...)" + Style.RESET_ALL)
-bot = TelegramClient(bot_username, api_id, api_hash)
-
-channel = input("Type the scammer channel username (Starts with @ or Telegram URL): ")
-print("Creating the normal user client")
 client.start()
-print("Creating the bot user client")
+# Creating the bot session
+if not os.path.isfile(str(bot_username) + ".session"):
+    print(Fore.GREEN + "[+] We are creating the session file for bot, input the bot token (i.e. 4509046619:LMnjdork...)" + Style.RESET_ALL)
+bot = TelegramClient(bot_username, api_id, api_hash)
 bot.start()
 
 async def get_channel_msgs():     
