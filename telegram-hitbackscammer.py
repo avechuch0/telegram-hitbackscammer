@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import configparser
 import subprocess
+import os
 from telethon import TelegramClient
 from colorama import Fore, Back, Style
 from colorama import init
@@ -108,9 +109,13 @@ def check_config():
         return False    
     else:
         global login
-        if login is True:
+        if login is True:        
             # Creating the 'user' session
-            print(Fore.GREEN + "[+] We are creating the session file for user, input your mobile phone number to login (i.e. +57300...)" + Style.RESET_ALL)
+            if not os.path.isfile(str(user_username) + ".session"):
+                print(Fore.GREEN + "[+] We are creating the session file for user, input your mobile phone number to login (i.e. +57300...)" + Style.RESET_ALL)                    
+            # Creating the 'user' session
+            if not os.path.isfile(str(bot_username) + ".session"):
+                print(Fore.GREEN + "[+] We are creating the session file for user, input your mobile phone number to login (i.e. +57300...)" + Style.RESET_ALL)
             client = TelegramClient(user_username, api_id, api_hash)
             client.start()
             client.disconnect()
