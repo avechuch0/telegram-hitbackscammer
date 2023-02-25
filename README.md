@@ -50,8 +50,7 @@ Once you select this option, you will see the message **Listening mode for bot**
 This will disconnect/make a bot used by a scammer/phisher leave the channel. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option **has 2 disadvantages** though:
 
 1. The scammer/phisher would not be notified about this action, but once he/she checks the list of administrators, he/she would realize what happened. It's up to them to add again the bot or not to the channel.
-
-**2. And the most important disadvantage:** </br> 
+2. And the most important disadvantage: </br>
 Once you leave a channel, you won't be able to do anything else there. So this should be your last option.
 
 ### 7. Exit
