@@ -48,4 +48,4 @@ bot.start()
 try:
     bot.run_until_disconnected()    
 except UnauthorizedError as e:
-    print(Fore.RED + str(e) + "\nToken revoked by scammer at" + str(datetime.datetime.now(datetime.timezone.utc)) + Style.RESET_ALL + "\n")
+    print(Fore.RED + str(e) + "\nToken revoked by scammer at " + str(datetime.datetime.now(datetime.timezone.utc)) + Style.RESET_ALL + "\n")
