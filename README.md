@@ -1,9 +1,9 @@
-[![Actively Maintained](https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
+[![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/avechuch0)
 
 # Telegram-hitbackscammer 
-This is a set of scripts and protocols to do some active defense and offensive countermeausures against scammers/phishers who use Telegram chats/channels as part of phishing kits.
+This is a set of scripts and protocols to conduct active defense and offensive countermeasures activities against scammers/phishers who use Telegram chats/channels as part of phishing kits, to store the victim's stolen data.
 
 telegram-hitbackscammer.py is a practical application of Annoyance, Attribution and Attack core concepts of active defense and offensive countermeausures to screw up threat actor activities, which can help with combating data theft, financial fraud prevention, impersonation, saving people's data, and contributing to a world free of phishing :)
 
@@ -61,7 +61,7 @@ Just to finish the program.
 2. Install required packages: ```pip3 install -r requirements.txt```
 3. Get the Telegram API keys (api_id and api_hash) following the instructions here https://core.telegram.org/api/obtaining_api_id
 4. Set the API keys in your config.ini file
-5. You're ready to go :) simply run the main script ```python .\telegram-hitbackscammer.py``` or ```python3 .\telegram-hitbackscammer.py``` depending how you are calling your python instance
+5. You're ready to go :) simply run the main script ```python3 .\telegram-hitbackscammer.py```
 6. The first time, you would be asked for a kind of login, **input your mobile number** including the + (i.e. +57300...), then you would be asked for the bot-token (i.e. 4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi), found on the phishing kit. This is to create a .session files to interact with the Telegram API.
 
 # Main feeds of this program
@@ -94,7 +94,11 @@ So the bot token and chat id values without the quotes "" are the ones you need 
 
 Nope, the attackers won't have any information about you. Despite your possible actions on the attacker's chat/channel, remember we are using their own bot and, on the other hand, the communication takes place between the bot and Telegram through the API.
 
-### 2. Can I use each script separately?
+### 2. Why it can delete just the last 48 hours of messages?
+
+Because it is working according to the current policy and limitations of Telegram Bot Api https://core.telegram.org/bots/api#deletemessage
+
+### 3. Can I use each script separately?
 
 Yes you can, but I kindly recommend you to use the main one with the menu, though it's up to you :)
 
