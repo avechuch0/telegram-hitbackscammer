@@ -2,6 +2,7 @@
 import configparser
 import os
 from telethon import TelegramClient, events, types
+from telethon.errors import UnauthorizedError
 from colorama import Fore, Style, Back
 
 # Reading Configs
@@ -43,4 +44,7 @@ async def my_event_handler(event):
     print(Back.WHITE + Fore.BLACK + "Message catched number " + str(count) + Style.RESET_ALL + "\n")
 
 bot.start()
-bot.run_until_disconnected()
+try:
+    bot.run_until_disconnected()    
+except UnauthorizedError as e:
+    print(Fore.RED + str(e) + "\nToken revoked by scammer at" + str(datetime.datetime.now(datetime.timezone.utc)) + Style.RESET_ALL + "\n")
