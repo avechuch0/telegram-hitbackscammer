@@ -20,7 +20,7 @@ if not os.path.isfile(str(bot_username) + ".session"):
     print(Fore.GREEN + "[+] We are creating the session file for bot, input the bot token (i.e. 4509046619:LMnjdork...)" + Style.RESET_ALL)
 bot = TelegramClient(bot_username, api_id, api_hash)
 count = 0
-print("Listening mode for bot")
+print(Fore.GREEN + "Ok, Listening mode for bot" + Style.RESET_ALL)
 
 #Just deleting the messages once posted on chat(s)/channel(s) associated with this bot
 @bot.on(events.NewMessage)

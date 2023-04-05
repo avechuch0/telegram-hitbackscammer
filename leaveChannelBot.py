@@ -2,7 +2,7 @@
 import configparser
 import os
 from telethon import TelegramClient, types
-from colorama import Fore, Style
+from colorama import Fore, Back, Style
 import sys
 
 # Reading Configs
@@ -37,29 +37,29 @@ async def main():
 
     # Check if User
     if isinstance(channel, types.User):
-        print(Fore.RED + "You can't do this action in private chats")
+        print("\n" + Back.WHITE + Fore.RED + "You can't do this because your input belongs to a user entity, not a channel" + Style.RESET_ALL)
         sys.exit(0)
     
-    print(Fore.RED + "Are you sure?\n" + Fore.WHITE + "Leaving this channel means a lossing of doing other activities over the channel")
-    answer = input("Type 'Yes' to proceed, anything to cancel: ")
+    print(Fore.RED + "Are you sure?\nLeaving this channel means a lossing of doing other activities over the channel")
+    answer = input("Type 'Yes' to proceed, anything to cancel: " + Style.RESET_ALL)
     if answer == 'Yes':
         try:
             await bot.delete_dialog(channel, revoke = True)
-            print(Fore.GREEN + "Succesfully leaving the channel " + str(entity) + Style.RESET_ALL)
+            print("\n" + Fore.GREEN + "Completed! Succesfully leaving the channel " + str(entity) + Style.RESET_ALL)
         except Exception as err:
             print(Exception, err)
             print("It might possible you see you're not a member of channel because you already previously left it")
     elif answer == 'yes':
-        print("Please type Yes next time")
+        print(Fore.RED + "Please type Yes next time once you input the channel again" + Style.RESET_ALL)
         await main()
     elif answer == 'y':
-        print("Please type Yes next time")
+        print(Fore.RED + "Please type Yes next time once you input the channel again" + Style.RESET_ALL)
         await main()
     elif answer == 'Y':
-        print("Please type Yes next time")
+        print(Fore.RED + "Please type Yes next time once you input the channel again" + Style.RESET_ALL)
         await main()    
     else:
-        print("Not leaving the channel " + str(entity) + " as you cancelled the operation")
+        print("\n" + Back.WHITE + Fore.RED + "[-] Not leaving the channel " + str(entity) + " as you cancelled the operation" + Style.RESET_ALL)
             
 with bot:
     bot.loop.run_until_complete(main())

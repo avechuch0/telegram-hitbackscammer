@@ -30,13 +30,13 @@ If you don't know whether the channel found on the phishing kit is public or pri
 
 More info about the Telegram chats/channels: https://telegram.org/faq_channels
 
-### 2. Get the list of administrators for channel
+### 2. Get the list of channel administrators
 Get a list of scammer channel`s administrators, then you may see who is the owner of the channel and make a threat attribution, i.e. identify the responsible scammer/phisher.
 
-### 3. Delete the last 48 hours messages of public channel  - (Only for public channels)
+### 3. Delete the last 48 hours messages of a public channel  - (Only for public channels)
 Selecting this option, you can read and delete the messages received during the last 48 hours on **public** scammer channel. Be sure to **input a public channel name** once the program asks to avoid errors.
 
-### 4. Delete the last 48 hours messages of private channel - (Only for private channels)
+### 4. Delete the last 48 hours messages of a private channel - (Only for private channels)
 Selecting this option, you can read and delete the messages received during the last 48 hours on **private** scammer channel. Be sure to **input a private channel name** once the program asks to avoid errors.
 
 ### 5. Listening mode for bot to delete any incoming messages
@@ -44,7 +44,7 @@ This is an interesting option if you want to annoy the scammer!
 
 This option has **the power to delete immediately any message the scammer bot writes in any chat/channel** associated with the malicious bot-token found on the phishing kit, if the attacker has more phishing campaings with other chats/channels created.
 
-Once you select this option, you will see the message **Listening mode for bot**, and every time a victim processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer will be fucked up and unable to see what the bot tried to post in the chat/channel.
+Once you select this option, you will see the message **Ok, Listening mode for bot**, and every time a victim processes the data on a phishing website associated with the bot-token value, you will see a notification on the shell/screen that the message was deleted. The scammer will be fucked up and unable to see what the bot tried to post in the chat/channel.
 
 ### 6. Leave the channel - (Available for both Public/Private channels)
 This will disconnect/make a bot used by a scammer/phisher leave the channel. This is a way to avoid further bot's posting on the channel without your actions being noticed. This option **has 2 disadvantages** though:
@@ -58,11 +58,11 @@ Just to finish the program.
 
 # Getting started
 1. Download / clone the repo
-2. Install required packages: ```pip3 install -r requirements.txt```
+2. Install required packages: ```pip3 install -r requirements.txt``` or ```pip install -r requirements.txt``` 
 3. Get the Telegram API keys (api_id and api_hash) following the instructions here https://core.telegram.org/api/obtaining_api_id
 4. Set the API keys in your config.ini file
-5. You're ready to go :) simply run the main script ```python3 .\telegram-hitbackscammer.py```
-6. The first time, you would be asked for a kind of login, **input your mobile number** including the + (i.e. +57300...), then you would be asked for the bot-token (i.e. 4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi), found on the phishing kit. This is to create a .session files to interact with the Telegram API.
+5. You're ready to go :) simply run the main script ```python3 .\telegram-hitbackscammer.py``` for Linux or ```python .\telegram-hitbackscammer.py``` if you are using a Windows environment 
+6. The first time, you would be asked for a kind of login, **input your mobile number** including the + (i.e. +57300...), then you would be asked for the bot-token (i.e. 4509046619:LMnjdorkaLUIiJldlp302lJDLmciOlLjJsi), found on the phishing kit. This is to create a .session files to interact with the Telegram API
 
 # Main feeds of this program
 The core of telegram-hitbackscammer are the chats/channels and Telegram bot-tokens. Below you can see some examples taken from real phishing cases:

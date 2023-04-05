@@ -3,6 +3,7 @@ import configparser
 import os
 from telethon import TelegramClient
 from colorama import Fore, Back, Style, init
+from tqdm import tqdm
 import time
 import datetime
 
@@ -43,7 +44,7 @@ async def get_channel_msgs(channel):
     last_msg = await bot.send_message(channel, "...")    
     date_minus_48h = last_msg.date - datetime.timedelta(hours=48)
 
-    print("Getting the last 48 hours of messages")
+    print(Fore.GREEN + "Phase 1/2 - Getting the last 48 hours of messages" + Style.RESET_ALL)
     msg_count = 0
 
     # Iterating over channel messages 
@@ -53,41 +54,43 @@ async def get_channel_msgs(channel):
             message = await bot.get_messages(channel, ids=msg_id)       
             if message.date > date_minus_48h:
                 none_count = 0
-                all_messages.append({"id": message.id, "msg": message.text})                                
+                all_messages.append({"id": message.id, "msg": message.text})
                 msg_count += 1
-                msg_id -= 1
+                msg_id -= 1    
+                for i in tqdm(range(0, msg_count), desc="Message " + str(msg_count)):            
+                    time.sleep(.01)                           
             else:
-                break          
+                break         
         #Handling NoneType data
         except Exception as err: 
             none_count += 1
             msg_id -= 1
             if none_count >= 30:
                 break
-    
-    print("Total messages gathered " + str(msg_count))
+
+    print(Fore.GREEN + "Completed! Total messages gathered " + str(msg_count) + Style.RESET_ALL + "\n")    
     return all_messages 
 
 async def delete_scammer_msgs(channel, list_messages): 
-    print(Back.WHITE + Fore.BLACK + "Deleting the last 48 hours of scammer channel " + str(channel) + Style.RESET_ALL)
+    print(Fore.GREEN + "Phase 2/2 - Deleting the last 48 hours of scammer channel " + str(channel) + Style.RESET_ALL)
     msg_count = 0
     for key in list_messages:        
         try:            
             await bot.delete_messages(channel, key['id'], revoke=True)
             time.sleep(1) # Sleep for 1 second to avoid flooding the servers
-            print("Succesfully deleted the message ID " + Fore.GREEN + str(key['id']) + Style.RESET_ALL)  
+            print("[+] Succesfully deleted the message ID " + Fore.GREEN + str(key['id']) + Style.RESET_ALL)  
             msg_count += 1
         except Exception as err: 
             pass              
             #To see properly the error, comment the 'pass' and below the error is because of
             #trying to remove id of services messages by Telegram
             #print(Exception, err)  
-    print("Completed the deletion of " + str(msg_count) + " messages.")  
+    print(Fore.GREEN + "Completed! Deleted " + str(msg_count) + " messages from channel." + Style.RESET_ALL + "\n")    
 
 async def send_message_to_scammer(channel):
     while True:
         # Getting your messages to post on the channel
-        message = input("Send final message(s) to the scammer (Type \033[31mCtrl\033[0m to exit): ")        
+        message = input("Send a final message(s) to the scammer (Type \033[31mCtrl\033[0m to exit): ")        
         if message == 'Ctrl':
             break
         else:

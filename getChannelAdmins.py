@@ -38,8 +38,8 @@ async def main():
         channel = entity
 
     # Check if User
-    if isinstance(channel, types.User):
-        print(Fore.RED + "This entity belongs to a user, not a channel. That's why is not possible to list administrators")
+    if isinstance(await bot.get_entity(channel), types.User):
+        print(Fore.RED + "This entity belongs to a user, not a channel. That's why it is not possible to get the list of administrators")
         sys.exit(0)
 
     # Get the administrators of the channel    

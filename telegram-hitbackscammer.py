@@ -2,6 +2,7 @@
 import configparser
 import subprocess
 import os
+import sys
 from telethon import TelegramClient
 from colorama import Fore, Back, Style
 from colorama import init
@@ -87,14 +88,14 @@ def menu():
     if foreground is True:
         print(Fore.WHITE + Back.BLUE)
         print(header.ljust(80))        
-        print(Fore.BLACK + Back.YELLOW + "".rjust(18) + "  Use the scammer own bot to screw up their activities".ljust(82))
+        print(Fore.BLACK + Back.YELLOW + "".rjust(22) + "  Use the scammers’ bot to screw up their activities".ljust(78))
         print(("".rjust(33) + AUTHOR + " - " + VERSION + "".rjust(36))) 
         print("".ljust(0) + Style.RESET_ALL + " ")
     print("".rjust(2) + "Please select an option:")
     print("".rjust(2) + "1. Doubts? - Check if the channel is public or private")
-    print("".rjust(2) + "2. Get the list of administrators for channel")
-    print("".rjust(2) + "3. Delete the last 48 hours messages of public channel  - (Only for public channels)")
-    print("".rjust(2) + "4. Delete the last 48 hours messages of private channel - (Only for private channels)")
+    print("".rjust(2) + "2. Get the list of channel administrators")
+    print("".rjust(2) + "3. Delete the last 48 hours messages of a public channel  - (Only for public channels)")
+    print("".rjust(2) + "4. Delete the last 48 hours messages of a private channel - (Only for private channels)")
     print("".rjust(2) + "5. Listening mode for bot to delete any incoming messages")
     print("".rjust(2) + "6. Leave the channel - (Available for both Public/Private channels)")
     print("".rjust(2) + "7. Exit\n")
@@ -127,29 +128,58 @@ def check_config():
 
 while check_config():    
     choice = menu()
-    if choice == "1":        
-        subprocess.run(["python3", "checkChannel.py"], check=True)        
-        foreground = False
-    elif choice == "2":        
-        subprocess.run(["python3", "getChannelAdmins.py"], check=True)        
-        foreground = False
-    elif choice == "3":
-        subprocess.run(["python3", "deleteChannelMsgs.py"], check=True)
-        foreground = False
-    elif choice == "4":
-        subprocess.run(["python3", "deletePrivateChannelMsgs.py"], check=True)
-        foreground = False
-    elif choice == "5":
-        subprocess.run(["python3", "deleteMsgsOnceBotPosted.py"], check=True)
-        foreground = False
-    elif choice == "6":
-        subprocess.run(["python3", "leaveChannelBot.py"], check=True)
-        foreground = False
-    elif choice == "7":
-        break
-    else:
-        foreground = False
-        print(Fore.BLACK + Back.WHITE)
-        print(header2.ljust(100))
-        print("".rjust(2) + "Invalid choice. Please try again.")
-        print(Style.RESET_ALL)
+    if sys.platform.startswith('win'):
+        if choice == "1":        
+            subprocess.run(["python", "checkChannel.py"], check=True)        
+            foreground = False
+        elif choice == "2":        
+            subprocess.run(["python", "getChannelAdmins.py"], check=True)        
+            foreground = False
+        elif choice == "3":
+            subprocess.run(["python", "deleteChannelMsgs.py"], check=True)
+            foreground = False
+        elif choice == "4":
+            subprocess.run(["python", "deletePrivateChannelMsgs.py"], check=True)
+            foreground = False
+        elif choice == "5":
+            subprocess.run(["python", "deleteMsgsOnceBotPosted.py"], check=True)
+            foreground = False
+        elif choice == "6":
+            subprocess.run(["python", "leaveChannelBot.py"], check=True)
+            foreground = False
+        elif choice == "7":
+            break
+        else:
+            foreground = False
+            print(Fore.BLACK + Back.WHITE)
+            print(header2.ljust(100))
+            print("".rjust(2) + "Invalid choice. Please try again.")
+            print(Style.RESET_ALL)
+
+    elif sys.platform.startswith('linux'):
+        if choice == "1":        
+            subprocess.run(["python3", "checkChannel.py"], check=True)        
+            foreground = False
+        elif choice == "2":        
+            subprocess.run(["python3", "getChannelAdmins.py"], check=True)        
+            foreground = False
+        elif choice == "3":
+            subprocess.run(["python3", "deleteChannelMsgs.py"], check=True)
+            foreground = False
+        elif choice == "4":
+            subprocess.run(["python3", "deletePrivateChannelMsgs.py"], check=True)
+            foreground = False
+        elif choice == "5":
+            subprocess.run(["python3", "deleteMsgsOnceBotPosted.py"], check=True)
+            foreground = False
+        elif choice == "6":
+            subprocess.run(["python3", "leaveChannelBot.py"], check=True)
+            foreground = False
+        elif choice == "7":
+            break
+        else:
+            foreground = False
+            print(Fore.BLACK + Back.WHITE)
+            print(header2.ljust(100))
+            print("".rjust(2) + "Invalid choice. Please try again.")
+            print(Style.RESET_ALL)
