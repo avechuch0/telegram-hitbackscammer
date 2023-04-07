@@ -49,7 +49,8 @@ async def get_channel_msgs():
         else:
             break
         for i in tqdm(range(0, msg_count), desc="Message " + str(msg_count)):            
-            time.sleep(.01)  
+            time.sleep(.01)
+        print("ID " +  Fore.GREEN + str(message.id) + Style.RESET_ALL)         
     print(Fore.GREEN + "Completed! Total messages gathered " + str(len(all_messages)) + Style.RESET_ALL + "\n")       
     return all_messages
     
