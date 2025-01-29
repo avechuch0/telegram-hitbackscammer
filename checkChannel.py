@@ -33,8 +33,7 @@ async def check_scammer_channel():
         channel = entity
 
     try:
-        channel = await bot.get_entity(channel)
-        print(str(channel))
+        channel = await bot.get_entity(channel)        
         if isinstance(channel, types.Channel):            
             if channel.username is None:
                 print(Fore.GREEN + '\nThe channel is private.' + Style.RESET_ALL)                
