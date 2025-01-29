@@ -91,8 +91,8 @@ async def delete_scammer_msgs(channel, list_messages):
 async def send_message_to_scammer(channel):
     while True:
         # Getting your messages to post on the channel
-        message = input("Send a final message(s) to the scammer (Type \033[31mCtrl\033[0m to exit): ")        
-        if message == 'Ctrl':
+        message = input("Send a final message(s) to the scammer (Type the word \033[31mExit\033[0m to return to the main menu): ")        
+        if message == 'Exit':
             break
         else:
             # Send the message to a specified user or channel

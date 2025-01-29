@@ -34,13 +34,17 @@ async def check_scammer_channel():
 
     try:
         channel = await bot.get_entity(channel)
+        print(str(channel))
         if isinstance(channel, types.Channel):            
             if channel.username is None:
                 print(Fore.GREEN + '\nThe channel is private.' + Style.RESET_ALL)                
             else: 
                 print(Fore.GREEN + '\nThe channel is public.' + Style.RESET_ALL)
         elif isinstance(channel, types.User):
-            print(Fore.GREEN + "Your input entity is not a channel, it belongs to a user account.\nBut don't worry, you can manage it as a private channel" + Style.RESET_ALL)        
+            print(Fore.GREEN + "\nYour input entity is not a channel, it belongs to a user account.\nBut don't worry, you can manage it as a private channel" + Style.RESET_ALL)
+        # For groups
+        elif isinstance(channel, types.Chat):
+            print(Fore.GREEN + "\nYour input entity is not a channel, it belongs to a Telegram Group.\nBut don't worry, you can manage it as a private channel" + Style.RESET_ALL)
     except Exception as err:
         print(Fore.RED + "The username you provided seems not to exist in the Telegram ecosystem." + Style.RESET_ALL)          
         
